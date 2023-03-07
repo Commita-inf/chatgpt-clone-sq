@@ -36,7 +36,7 @@ export default function Edit() {
         onChange={(e) => setInput(e.target.value)}
         className="rounded-md focus:border-2 focus:border-blue-500 w-[50%] h-[30%] p-2"
       />
-      <div className="flex items-center justify-center w-full">
+      <div className="flex items-center justify-center w-full gap-4">
         <Link href="/">
           <button className="py-4 px-6 bg-gray-500 hover:bg-gray-700 text-white rounded-md">
             Back
