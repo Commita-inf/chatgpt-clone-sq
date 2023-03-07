@@ -13,7 +13,7 @@ export default function Edit() {
   const generateEdit = async () => {
     setLoading(true);
     const { data } = await axios.post(
-      `${BASE_URL}/api/edits`,
+      `${BASE_URL}/api/tune`,
       { input },
       {
         headers: {
@@ -46,7 +46,7 @@ export default function Edit() {
           className="py-4 px-6 bg-amber-500 hover:bg-amber-700 text-white rounded-md"
           onClick={generateEdit}
         >
-          Generate Edit
+          Fine Tuning
         </button>
       </div>
       {loading ? (
