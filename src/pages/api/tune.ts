@@ -1,6 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { Configuration, OpenAIApi} from 'openai';
+import { Configuration, OpenAIApi, FineTune} from 'openai';
+
+
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,15 +13,16 @@ export default async function handler(
         apiKey: process.env.OPENAI_API_KEY,
       });
       const openai = new OpenAIApi(configuration);
-      try {
-        
-          const response = await openai.createEdit({
-            model: "code-davinci-edit-001",
-            input: req.body.input,
-            instruction: "Fix the spelling mistakes",
+      try {  
+          const fineTuneResponse = await openai.createFineTune({
+              model: "code-davinci-edit-001",
+              training_file: '/Users/fatma/Desktop/chatgpt-clone-nextjs/src/lib/dataset.jsonl'
           });
-          return res.status(200).json({success: response.data.choices[0]})
+          
+          console.log(fineTuneResponse);
       } catch (error) {
+        console.log(error);
+        
         return res.status(400).json({error})
       }
 

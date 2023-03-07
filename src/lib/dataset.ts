@@ -1,4 +1,5 @@
-{
+export const trainingData = [
+    {
         "prompt": "Is Mars the closest planet to Earth?",
         "completion": "No, Venus is the closest planet to Earth."
       },
@@ -61,4 +62,5 @@
       {
         "prompt": "What challenges must be overcome in order to colonize Mars?",
         "completion": "Some of the challenges that must be overcome in order to colonize Mars include developing technology for sustainable living, dealing with the harsh Martian environment, and managing the psychological effects of living in isolation."
-      }    
+      }       
+  ];
