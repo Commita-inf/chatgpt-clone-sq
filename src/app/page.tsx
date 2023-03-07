@@ -122,8 +122,8 @@ export default function Home() {
   };
 
   return (
-    <main className="relative h-full w-full transition-width flex flex-col overflow-hidden items-stretch flex-1">
-      <div className="flex-1 overflow-hidden">
+    <main className="relative h-full w-full transition-width flex flex-col items-stretch flex-1">
+      <div className="flex-1">
         <div className="h-full dark:bg-gray-800">
           <div className="flex flex-col items-center text-sm h-full dark:bg-gray-800">
             {responseMessage === "" ? (
