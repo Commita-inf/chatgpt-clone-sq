@@ -9,7 +9,7 @@ const Hero = () => {
       <h1 className="text-4xl font-semibold text-center mt-6 ml-auto mr-auto mb-10 sm:mb-16 flex gap-2 items-center justify-center">
         ChatGPT Clone
       </h1>
-      <p className="text-3xl">
+      <p className="text-3xl mx-4 text-center">
         Ask me what you want, what you desire, the answer is always here
       </p>
     </div>
@@ -189,7 +189,7 @@ export default function Home() {
             rel="noreferrer"
             className="underline"
           >
-            ChatGPT Chant Compeltion Clone,
+            ChatGPT Chat Compeltion Clone,
           </a>
           Please consider this code for only testing usage, Thank you
         </div>
