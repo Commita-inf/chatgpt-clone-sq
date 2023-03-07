@@ -42,7 +42,7 @@ export default function Edit() {
         Generate Edit
       </button>
       {loading ? (
-        <span className="text-black dark:text-white">"Loading..."</span>
+        <span className="text-black dark:text-white">Loading...</span>
       ) : (
         <pre className="text-black dark:text-white">{output}</pre>
       )}
