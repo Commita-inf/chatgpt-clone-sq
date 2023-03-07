@@ -7,8 +7,10 @@ import { BASE_URL } from "@/lib/constants";
 export default function Edit() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const generateEdit = async () => {
+    setLoading(true);
     const { data } = await axios.post(
       `${BASE_URL}/api/edits`,
       { input },
@@ -19,6 +21,7 @@ export default function Edit() {
         },
       }
     );
+    setLoading(false);
     setOutput(data?.success?.text);
   };
 
@@ -38,7 +41,11 @@ export default function Edit() {
       >
         Generate Edit
       </button>
-      {output && <pre className="text-black dark:text-white">{output}</pre>}
+      {loading ? (
+        <span className="text-black dark:text-white">"Loading..."</span>
+      ) : (
+        <pre className="text-black dark:text-white">{output}</pre>
+      )}
     </div>
   );
 }
