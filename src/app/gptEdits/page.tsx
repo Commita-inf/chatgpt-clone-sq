@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "@/lib/constants";
 
 export default function Edit() {
   const [input, setInput] = useState("");
@@ -9,7 +10,7 @@ export default function Edit() {
 
   const generateEdit = async () => {
     const { data } = await axios.post(
-      "http://localhost:3000/api/edits",
+      `${BASE_URL}/api/edits`,
       { input },
       {
         headers: {
