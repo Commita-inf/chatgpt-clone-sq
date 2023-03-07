@@ -2,16 +2,28 @@
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import { useState } from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full text-white">
+    <div className="flex flex-col items-center justify-center w-full h-full text-white gap-6">
       <h1 className="text-4xl font-semibold text-center mt-6 ml-auto mr-auto mb-10 sm:mb-16 flex gap-2 items-center justify-center">
         ChatGPT Clone
       </h1>
       <p className="text-3xl mx-4 text-center">
         Ask me what you want, what you desire, the answer is always here
       </p>
+      <div className="flex justify-between w-full gap-2 max-w-md mx-auto">
+        <button className="flex flex-grow py-2 px-4 bg-amber-500 hover:bg-amber-700 items-center justify-center rounded-md">
+          Completion
+        </button>
+        <Link
+          href="/gptEdits"
+          className="flex flex-grow py-2 px-4 bg-amber-500 hover:bg-amber-700 items-center justify-center rounded-md"
+        >
+          <button>Edits</button>
+        </Link>
+      </div>
     </div>
   );
 };
