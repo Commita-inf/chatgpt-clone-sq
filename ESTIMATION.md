@@ -16,6 +16,8 @@
 4. Test the functionalities in the local server: 15 min,
 5. Deploy the project to VERCEL: 5 min,
 
+### Total estimated: 2 hours and 20 minutes
+
 ## Explore APEN AI fine tuning feature:
 
 1. Start a research about Open AI api fine tuning features: 1 day,

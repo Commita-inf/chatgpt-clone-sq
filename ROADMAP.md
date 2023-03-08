@@ -13,6 +13,8 @@
 ## Exploring Chat GPT Fine tuning feature
 
 1. Dev :
+
 <li>Creation of database to train the model: Done</li>
 <li>Training the model: ERROR PERSIST</li>
-2. Not implemented yet.
+
+2. Dep: Not implemented yet.
