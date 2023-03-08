@@ -7,7 +7,7 @@ This project includes two main features of gpt api:
 1. Completions,
 2. Edits
 
-![Alt text](../Screen%20Shot%202023-03-08%20at%207.57.10%20AM.png)
+<img width="1348" alt="Screen Shot 2023-03-08 at 9 12 18 AM" src="public/gpt-window.png">
 
 ### Clone the repo and run the following command
 
