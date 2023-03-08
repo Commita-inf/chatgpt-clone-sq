@@ -1,8 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) of Chat-gpt clone for training purposes
 
 ## Getting Started
 
-First, run the development server:
+This project includes two main features of gpt api:
+
+1. Completions,
+2. Edits
+
+![Alt text](../Screen%20Shot%202023-03-08%20at%207.57.10%20AM.png)
 
 ```bash
 npm run dev
@@ -36,4 +41,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # chatgpt-clone-sq
