@@ -14,12 +14,9 @@ export default async function handler(
       });
       const openai = new OpenAIApi(configuration);
       try {  
-          const fineTuneResponse = await openai.createFineTune({
-              model: "code-davinci-edit-001",
-              training_file: '/Users/fatma/Desktop/chatgpt-clone-nextjs/src/lib/dataset.jsonl'
-          });
+          //const fineTuneResponse = await openai.createFile({})
           
-          console.log(fineTuneResponse);
+          //console.log(fineTuneResponse);
       } catch (error) {
         console.log(error);
         
